@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html{
+    font-size: 12px;
+}
+
+body{
+    background-image: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.desktop-box-container{
+    position: absolute;
+    z-index: 1;
+}
+
+.img-box-desktop{
+    position: relative;
+    margin-top: 132%;
+    left: -48%;
+} 
+
+
+.faq-card{
+    color: hsl(237, 12%, 33%);
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-holder{
+    width: 450px;
+    height: 450px;
+    position: relative;
+}
+
+.img-woman-desktop{
+    position: absolute;
+    top: 12%;
+    left: -34%;
+}
+
+.img-bg-desktop{
+    position: absolute;
+    top: -67%;
+    left: -156%;
+}
+
+.image-holder-mobile{
+    display: none;
+} 
+
+.title{
+    margin-bottom: 1.4rem;
+    font-size: 3rem;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.accordion{
+    margin-left: 50px;
+    width: 55%;
+
+}
+
+.cardBox{
+    position: relative;
+}
+
+.question-holder{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.question{
+    cursor: pointer;
+    display: inline-block;
+    transition: all .3s ease;
+    font-size: 1.3rem;
+}
+
+.question:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+.cardBox.active .question{
+    font-weight: 700;
+    color: black;
+}
+
+.arrow-holder{
+    cursor: pointer;
+    line-height: inherit;
+    margin-left: 1rem;
+    margin-right: 1rem;
+} 
+
+.cardBox.active .arrow{
+    transform: scaleY(-1)
+}
+
+.answer-holder{
+    padding-right: 1.2rem;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+
+.answer{
+    position: relative;
+    height: 1px;
+    overflow: hidden;
+    color: white;
+    line-height: 1.5rem;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+    font-size: 1.2rem;
+    
+}
+
+
+.cardBox.active .answer{
+    height: 90px;
+    color: inherit;
+}
+
+
+@media only screen and (max-width : 700px) {
+    .desktop-box-container{
+        display: none;
+    }
+    .image-holder{
+        display: none;
+    }
+
+    .image-holder-mobile{
+        /* background-color: green; */
+        display: block;
+        width: 100px;
+        height: 100px;
+
+        position: relative;
+    }
+
+    .mobile-img{
+        position: absolute;
+        left: -100%;
+        top: -130%;
+    }
+
+    .mobile-bg{
+        position: absolute;
+        left: -70%;
+        top: -20%;
+    }
+
+    .faq-card{
+        margin: auto;
+        padding: 2.2rem;
+        padding-bottom: 5rem;
+        flex-direction: column;
+        width: 90%;
+        overflow: visible;
+        /* height: 600px; */
+    }
+
+    .accordion{
+        margin: auto;
+        width: 100%;
+        flex-wrap: warp;
+        /* background-color: lightseagreen; */
+    }
+
+    .title{
+        text-align: center;
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+    }
+
+}

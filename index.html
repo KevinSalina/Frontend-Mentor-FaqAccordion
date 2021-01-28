@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app.css">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+
+<body>
+
+  <main>
+
+    <!-- Destop Box Img (overhangs the main container) -->
+    <div class="desktop-box-container">
+      <img class="img-box-desktop" src="./images/illustration-box-desktop.svg" alt="">
+    </div>
+
+    <!-- Main Container-->
+    <div class="faq-card">
+
+      <!-- Images on left side of container -->
+      <div class="image-holder-mobile">
+        <img class="mobile-img" src="./images/illustration-woman-online-mobile.svg" alt="">
+        <img class="mobile-bg" src="./images/bg-pattern-mobile.svg" alt="">
+      </div>
+
+      <div class="image-holder">
+        <img class="img-bg-desktop" src="./images/bg-pattern-desktop.svg" alt="">
+        <img class="img-woman-desktop" src="./images/illustration-woman-online-desktop.svg" alt="">
+      </div>
+
+      <!-- FAQ Accordion on right side of container -->
+      <div class="accordion">
+        <h1 class="title">FAQ</h1>
+        <div class="cardBox">
+          <div class="question-holder">
+            <div class="question">How many team members can I invite?</div>
+            <span class="arrow-holder"><img src="./images/icon-arrow-down.svg" alt="" class="arrow"></span>
+          </div>
+          <div class="answer-holder">
+            <div class="answer">
+              <p>You can invite up to 2 additional users on the Free plan. There is no limit on
+                team members for the Premium plan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="question-holder">
+            <div class="question">
+              What is the maximum file upload size? </div>
+            <span class="arrow-holder"><img src="./images/icon-arrow-down.svg" alt="" class="arrow"></span>
+          </div>
+          <div class="answer-holder">
+            <div class="answer">
+              <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="question-holder">
+            <div class="question">How do I reset my password?</div>
+            <span class="arrow-holder"><img src="./images/icon-arrow-down.svg" alt="" class="arrow"></span>
+          </div>
+          <div class="answer-holder">
+            <div class="answer">
+              <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                A reset link will be emailed to you.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="question-holder">
+            <div class="question">Can I cancel my subscription?</div>
+            <span class="arrow-holder"><img src="./images/icon-arrow-down.svg" alt="" class="arrow"></span>
+          </div>
+          <div class="answer-holder">
+            <div class="answer">
+              <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="question-holder">
+            <div class="question">Do you provide additional support?</div>
+            <span class="arrow-holder"><img src="./images/icon-arrow-down.svg" alt="" class="arrow"></span>
+          </div>
+          <div class="answer-holder">
+            <div class="answer">
+              <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
