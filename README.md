@@ -1,6 +1,6 @@
 # Frontend Mentor FAQ Accordion
 
-Project to create a simple **FAQ Accordion** only vanilla HTML, CSS, and JS.
+Project to create a simple **FAQ Accordion** with only vanilla HTML, CSS, and JS.
 
 🔗 **Live preview:** [here](https://frontend-mentor-faq-accordion-topaz.vercel.app/)
 
